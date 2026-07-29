@@ -1,59 +1,176 @@
-# HospitalEsperanca
+# 🏥 SICC - Sistema Interno de Cadastro e Controle
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.19.
+O **SICC (Sistema Interno de Cadastro e Controle)** é um sistema web desenvolvido para o **Hospital Esperança**, com o objetivo de centralizar o gerenciamento de colaboradores, EPIs, treinamentos e processos administrativos.
 
-## Development server
+Este projeto foi desenvolvido como trabalho acadêmico utilizando **Angular** e **Bootstrap**, seguindo boas práticas de organização, componentização e controle de acesso por perfis de usuários.
 
-To start a local development server, run:
+---
+
+## 📷 Demonstração
+
+> Em breve serão adicionadas imagens do sistema.
+
+---
+
+## ✨ Funcionalidades implementadas
+
+### 🔐 Autenticação
+
+- Login por matrícula ou e-mail
+- Validação de credenciais
+- Recuperação de senha
+- Logout seguro
+- Controle de sessão
+
+### 👤 Controle de usuários
+
+- Perfil Administrador
+- Perfil RH
+- Perfil Técnico de Segurança
+
+### 🔒 Controle de acesso
+
+- Auth Guard
+- Admin Guard
+- Controle de permissões por perfil
+- Restrições de acesso às configurações
+
+### ⚙️ Configurações
+
+- Gerenciamento de usuários
+- Gerenciamento de perfis
+- Gerenciamento de permissões
+- Preferências do sistema
+
+### 📱 Interface
+
+- Dashboard moderno
+- Sidebar responsiva
+- Topbar interativa
+- Menu de perfil
+- Layout responsivo para desktop, tablet e celular
+
+---
+
+## 🚀 Tecnologias utilizadas
+
+- Angular
+- TypeScript
+- HTML5
+- CSS3
+- Bootstrap 5
+- Bootstrap Icons
+- Git
+- GitHub
+
+---
+
+## 📂 Estrutura do projeto
+
+```
+src/
+│
+├── app/
+│   ├── core/
+│   │   ├── guards/
+│   │   ├── layout/
+│   │   ├── sidebar/
+│   │   └── topbar/
+│   │
+│   ├── pages/
+│   │   ├── login/
+│   │   ├── recuperar-senha/
+│   │   ├── dashboard/
+│   │   └── configuracoes/
+│   │
+│   └── shared/
+│       └── services/
+│
+└── assets/
+```
+
+---
+
+## ▶️ Como executar o projeto
+
+### Clone o repositório
+
+```bash
+git clone https://github.com/Cristiann6/hospital-esperanca-sicc.git
+```
+
+### Entre na pasta
+
+```bash
+cd hospital-esperanca-sicc
+```
+
+### Instale as dependências
+
+```bash
+npm install
+```
+
+### Execute o projeto
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Depois acesse:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+## 👨‍💻 Usuários para teste
 
-## Building
+### Administrador
 
-To build the project run:
+| Campo | Valor |
+|-------|-------|
+| Matrícula | 1001 |
+| E-mail | cristian@hospitalesperanca.com |
+| Senha | admin123 |
 
-```bash
-ng build
-```
+### RH
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+| Campo | Valor |
+|-------|-------|
+| Matrícula | 1002 |
+| E-mail | mariana@hospitalesperanca.com |
+| Senha | rh123 |
 
-## Running unit tests
+### Técnico de Segurança
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+| Campo | Valor |
+|-------|-------|
+| Matrícula | 1003 |
+| E-mail | carlos@hospitalesperanca.com |
+| Senha | seg123 |
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## 📌 Próximas funcionalidades
 
-For end-to-end (e2e) testing, run:
+- Cadastro de colaboradores
+- Gestão de EPIs
+- Controle de estoque
+- Treinamentos
+- Relatórios
+- Integração com banco de dados
+- API REST
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 👥 Equipe
 
-## Additional Resources
+Projeto desenvolvido como atividade acadêmica.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 📄 Licença
+
+Projeto desenvolvido exclusivamente para fins educacionais.
