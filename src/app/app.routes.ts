@@ -6,7 +6,8 @@ import { Configuracoes } from './pages/configuracoes/configuracoes';
 import { Inicio } from './pages/inicio/inicio';
 import { Login } from './pages/login/login';
 import { RecuperarSenha } from './pages/recuperar-senha/recuperar-senha';
-
+import { Relatorio } from './pages/relatorio/relatorio';
+import { Treinamentos } from './pages/treinamento/treinamento';
 export const routes: Routes = [
   {
     path: '',
@@ -28,7 +29,15 @@ export const routes: Routes = [
       {
         path: 'configuracoes',
         component: Configuracoes,
-        canActivate: [adminGuard]
+        canActivate: [adminGuard] 
+      },
+      {
+        path: 'treinamentos',
+        component: Treinamentos
+      },
+      {
+        path: 'relatorio',
+        component: Relatorio
       }
     ]
   },
