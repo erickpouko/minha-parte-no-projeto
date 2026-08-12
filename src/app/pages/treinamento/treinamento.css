@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:wght@400;500;600;700;800&display=swap');
-
+/* class="btn btn-primary new-user-button" */
 h2, h4, h5 {
   font-weight: 800;
   color: var(--text);
@@ -167,13 +167,25 @@ label.form-label {
   }
 
 }
+.new-user-button,
+.save-button {
+  min-height: 44px;
+  padding: 0 18px;
+}
+
 .btn-primary {
     border-width: medium;
     border-style: none;
     border-color: currentColor;
     border-image: none;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #fff;
     font-weight: 800;
     border-radius: var(--radius-md);
     transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(26, 90, 169, 0.18);
 }

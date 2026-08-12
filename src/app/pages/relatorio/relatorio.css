@@ -78,6 +78,12 @@ small {
   }
 }
 
+.new-user-button,
+.save-button {
+  min-height: 44px;
+  padding: 0 18px;
+}
+
 .btn {
   height: 44px;
   border-radius: var(--radius-md);
@@ -99,6 +105,13 @@ small {
       transform: translateY(-1px);
     }
   }
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  border-color: transparent;
+  color: #fff;
+  font-weight: 800;
 }
 
 /* ==========================================================================

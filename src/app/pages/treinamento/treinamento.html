@@ -3,7 +3,7 @@
   <!-- CABEÇALHO COM BOTÕES DE AÇÃO -->
   <div class="d-flex justify-content-between align-items-center mb-4">
     <h2>Gestão de Treinamentos</h2>
-    <button class="btn-primary" (click)="abrirModalNovo()">
+    <button type="button" class="btn btn-primary new-user-button" (click)="abrirModalNovo()">
       <i class="bi bi-plus-lg me-2"></i> Novo Treinamento
     </button>
   </div>
@@ -146,7 +146,7 @@
               <input type="text" class="form-control" placeholder="Ex: Manutenção" [(ngModel)]="novoParticipante.setor">
             </div>
             <div class="col-md-3">
-              <button class="btn btn-outline-primary w-100" (click)="adicionarParticipanteModal()">
+              <button type="button" class="btn btn-primary new-user-button w-100" (click)="adicionarParticipanteModal()">
                 <i class="bi bi-plus"></i> Adicionar
               </button>
             </div>
@@ -172,7 +172,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-outline-secondary" (click)="fecharModal()">Cancelar</button>
-          <button type="button" class="btn btn-success" (click)="salvarTreinamento()">
+          <button type="button" class="btn btn-primary new-user-button" (click)="salvarTreinamento()">
             <i class="bi bi-check-lg me-1"></i> Salvar
           </button>
         </div>
