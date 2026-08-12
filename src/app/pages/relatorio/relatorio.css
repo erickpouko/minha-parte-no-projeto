@@ -9,7 +9,7 @@ h2, h4 {
   color: var(--text);
 }
 
-h2 {
+.h2 {
   font-size: clamp(27px, 3vw, 36px);
 }
 

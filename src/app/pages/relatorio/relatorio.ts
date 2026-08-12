@@ -2,19 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
+
+
 export interface ItemRelatorioTreinamento {
   titulo: string;
   norma?: string;
   data: string; // Formato YYYY-MM-DD
   concluidos: number;
   pendentes: number;
-  status: 'Regular' | 'Atenção';
+  status: 'Regular' | 'Atenção' | 'Crítico';
 }
 
 export interface ItemRelatorioEstoque {
   codigo: string;
   item: string;
-  saldo: number;
+  saldo: number ;
   estoqueMinimo: number;
   setor?: string;
   status: 'OK' | 'REPOR' | 'CRÍTICO';
@@ -27,7 +29,6 @@ export interface ItemRelatorioEntrega {
   epi: string;
   motivo: string;
 }
-
 @Component({
   selector: 'app-relatorios',
   standalone: true,
@@ -35,6 +36,7 @@ export interface ItemRelatorioEntrega {
   templateUrl: './relatorio.html',
   styleUrls: ['./relatorio.css']
 })
+
 export class Relatorio implements OnInit {
 
   // Filtros selecionados no formulário
